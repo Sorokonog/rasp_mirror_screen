@@ -4,12 +4,12 @@ import os
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(14, GPIO.IN)
+GPIO.setup(12, GPIO.IN)
 
 toggle = 0
 
 while True:
-    i=GPIO.input(14)
+    i=GPIO.input(12)
     if i==0: #When output from motion sensor is LOW
         if toggle == 0:                 
             print ("mirrow",i)
